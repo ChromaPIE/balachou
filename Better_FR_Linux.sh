@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# Balatro French Translations
+# Balachou - 小丑牌汉化修改包
+# 分支自 Balatro 法语翻译修改项目
 #
-# Script d'installation du pack de langue FR pour Balatro (version SteamDeck/Linux)
-# Fichier de langue et assets créés par la communauté Discord (Balatro FR - loc mod) : https://discord.gg/kQMdHTXB3Z
+# 安装脚本（SteamDeck/Linux版）
+# ChromaPIE个人项目
 # Toutes les sources à jour sont disponibles ici : https://github.com/FrBmt-BIGetNouf/balatro-french-translations/
 #
 # Ce script utilise Balamod pour injecter les ressources au jeu (https://github.com/balamod/balamod)
@@ -20,16 +21,16 @@ ressources_folder=$'Balatro_Localization_Resources'
 
 # Initialisation
 init() {
-    echo "========================================="
-    echo "==     Balatro French Translations     =="
-    echo "==  Installation du pack de langue FR  =="
-    echo "==        Traductions et images        =="
-    echo "========================================="
+    echo "=========================================="
+    echo "==               Balachou               =="
+    echo "==      Balatro Simplified Chinese      =="
+    echo "==         Translation Overhaul         =="
+    echo "=========================================="
 
-    # Question utilisateur : Les images en Francais doivent-elles être utilisées ?
+    # 用户选项：材质需要应用本地化吗？（不适用：不需要/待完善）
     echo ""
     echo ""
-    echo "Voulez-vous utiliser les images en Français ? (O/N)"
+    echo "Voulez-vous utiliser les images en Français ? (N/Y)"
     read -r download_assets
 
     if [[ "$download_assets" =~ ^[Oo]$ ]]; then
